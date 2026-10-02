@@ -4,10 +4,7 @@
 
 import pygame
 
-from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
-ASSETS = BASE_DIR / "assets"
 
 
 
@@ -27,27 +24,27 @@ clock=pygame.time.Clock()
 
 
 
-pygame.mixer.music.load(str(ASSETS / "audio" / "music" / "Loading_Sound.mp3"))
+pygame.mixer.music.load(str("assets\\audio\\music\\Loading_Sound.mp3"))
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(1)
 
-luffy_start_sound=pygame.mixer.Sound(str(ASSETS / "audio" / "sfx" / "luffy_start.mp3"))
+luffy_start_sound=pygame.mixer.Sound(str("assets\\audio\\sfx\\luffy_start.mp3"))
 luffy_start_sound.set_volume(1)
 
-luffy_arm_stretch=pygame.mixer.Sound(str(ASSETS / "audio" / "sfx" / "luffy-arm-stretch.mp3"))
+luffy_arm_stretch=pygame.mixer.Sound(str("assets\\audio\\sfx\\luffy-arm-stretch.mp3"))
 luffy_arm_stretch.set_volume(0.7)
 
-gatling_sound=pygame.mixer.Sound(str(ASSETS / "audio" / "sfx" / "gatlings.mp3"))
+gatling_sound=pygame.mixer.Sound(str("assets\\audio\\sfx\\gatlings.mp3"))
 gatling_sound.set_volume(1)
 
 
-luffy_jump=pygame.mixer.Sound(str(ASSETS / "audio" / "sfx" / "luffy_jump.mp3"))
+luffy_jump=pygame.mixer.Sound(str("assets\\audio\\sfx\\luffy_jump.mp3"))
 luffy_jump.set_volume(0.5)
 
-luffy_orewa=pygame.mixer.Sound(str(ASSETS / "audio" / "sfx" / "luffy-orewa.mp3"))
+luffy_orewa=pygame.mixer.Sound(str("assets\\audio\\sfx\\luffy-orewa.mp3"))
 luffy_orewa.set_volume(1)
 
-one_piece_sad=pygame.mixer.Sound(str(ASSETS / "audio" / "music" / "one-piece-sad.mp3"))
+one_piece_sad=pygame.mixer.Sound(str("assets\\audio\\music\\one-piece-sad.mp3"))
 one_piece_sad.set_volume(1)
 
 
@@ -56,53 +53,53 @@ one_piece_sad.set_volume(1)
 # ----for Luffy
 
 
-luffy_idle =pygame.image.load(str(ASSETS / "characters" / "luffy" / "Left (Normal - Playable)" / "Split Sprites" / "idoling__idoling_01.png")).convert_alpha()
+luffy_idle =pygame.image.load(str("assets\\characters\\luffy\\Left (Normal - Playable)\\Split Sprites\\idoling__idoling_01.png")).convert_alpha()
 luffy_idle=pygame.transform.scale(luffy_idle, (120, 120))
 
-luffy_left =pygame.image.load(str(ASSETS / "characters" / "luffy" / "Left (Normal - Playable)" / "Split Sprites" / "back.png")).convert_alpha()
+luffy_left =pygame.image.load(str("assets\\characters\\luffy\\Left (Normal - Playable)\\Split Sprites\\back.png")).convert_alpha()
 luffy_left=pygame.transform.scale(luffy_left, (120, 120))
 
-luffy_right =pygame.image.load(str(ASSETS / "characters" / "luffy" / "Right (Reversed - Enemy)" / "Split Sprites" / "go.png")).convert_alpha()
+luffy_right =pygame.image.load(str("assets\\characters\\luffy\\Right (Reversed - Enemy)\\Split Sprites\\go.png")).convert_alpha()
 luffy_right=pygame.transform.scale(luffy_right, (120, 120))
 
-luffy_attack11 =pygame.image.load(str(ASSETS / "characters" / "luffy" / "Left (Normal - Playable)" / "Split Sprites" / "attack_01.png")).convert_alpha()
+luffy_attack11 =pygame.image.load(str("assets\\characters\\luffy\\Left (Normal - Playable)\\Split Sprites\\attack_01.png")).convert_alpha()
 luffy_attack11=pygame.transform.scale(luffy_attack11, (120, 120))
-luffy_attack12 =pygame.image.load(str(ASSETS / "characters" / "luffy" / "Left (Normal - Playable)" / "Split Sprites" / "attack_02__finish__ready.png")).convert_alpha()
+luffy_attack12 =pygame.image.load(str("assets\\characters\\luffy\\Left (Normal - Playable)\\Split Sprites\\attack_02__finish__ready.png")).convert_alpha()
 luffy_attack12=pygame.transform.scale(luffy_attack12, (120, 120))
-luffy_attack13 =pygame.image.load(str(ASSETS / "characters" / "luffy" / "Left (Normal - Playable)" / "Split Sprites" / "attack_03.png")).convert_alpha()
+luffy_attack13 =pygame.image.load(str("assets\\characters\\luffy\\Left (Normal - Playable)\\Split Sprites\\attack_03.png")).convert_alpha()
 luffy_attack13=pygame.transform.scale(luffy_attack13, (120, 120))
 
 
 # ---- for Alvida
 
-alvida1 = pygame.image.load(str(ASSETS / "characters" / "alvida" / "idle" / "alvida1.png")).convert_alpha()
+alvida1 = pygame.image.load(str("assets\\characters\\alvida\\idle\\alvida1.png")).convert_alpha()
 alvida1 = pygame.transform.scale(alvida1, ((150, 150)))
 
-alvida2 = pygame.image.load(str(ASSETS / "characters" / "alvida" / "idle" / "alvida2.png")).convert_alpha()
+alvida2 = pygame.image.load(str("assets\\characters\\alvida\\idle\\alvida2.png")).convert_alpha()
 alvida2 = pygame.transform.scale(alvida2, ((150, 150)))
 
-alvida3 = pygame.image.load(str(ASSETS / "characters" / "alvida" / "idle" / "alvida3.png")).convert_alpha()
+alvida3 = pygame.image.load(str("assets\\characters\\alvida\\idle\\alvida3.png")).convert_alpha()
 alvida3 = pygame.transform.scale(alvida3, ((150, 150)))
 
-alvida4 = pygame.image.load(str(ASSETS / "characters" / "alvida" / "idle" / "alvida4.png")).convert_alpha()
+alvida4 = pygame.image.load(str("assets\\characters\\alvida\\idle\\alvida4.png")).convert_alpha()
 alvida4 = pygame.transform.scale(alvida4, ((150, 150)))
 
-alvida5 = pygame.image.load(str(ASSETS / "characters" / "alvida" / "idle" / "alvida5.png")).convert_alpha()
+alvida5 = pygame.image.load(str("assets\\characters\\alvida\\idle\\alvida5.png")).convert_alpha()
 alvida5 = pygame.transform.scale(alvida5, ((150, 150)))
 
-alvida6 = pygame.image.load(str(ASSETS / "characters" / "alvida" / "idle" / "alvida6.png")).convert_alpha()
+alvida6 = pygame.image.load(str("assets\\characters\\alvida\\idle\\alvida6.png")).convert_alpha()
 alvida6 = pygame.transform.scale(alvida6, ((150, 150)))
 
-alvida7 = pygame.image.load(str(ASSETS / "characters" / "alvida" / "idle" / "alvida7.png")).convert_alpha()
+alvida7 = pygame.image.load(str("assets\\characters\\alvida\\idle\\alvida7.png")).convert_alpha()
 alvida7 = pygame.transform.scale(alvida7, ((150, 150)))
 
 
 # ---- for Backgrounds
 
-bg_image = pygame.image.load(str(ASSETS / "backgrounds" / "loading.png")).convert_alpha()
+bg_image = pygame.image.load(str("assets\\backgrounds\\loading.png")).convert_alpha()
 bg_image = pygame.transform.scale(bg_image, ((800, 600)))
 
-alvida_image = pygame.image.load(str(ASSETS / "characters" / "alvida" / "idle" / "alvida-ship.png")).convert_alpha()
+alvida_image = pygame.image.load(str("assets\\characters\\alvida\\idle\\alvida-ship.png")).convert_alpha()
 alvida_image = pygame.transform.scale(alvida_image, ((800, 600)))
 
 
@@ -112,10 +109,10 @@ alvida_image = pygame.transform.scale(alvida_image, ((800, 600)))
 
 # Luffy Gatling
 luffy_attack2_frames = []
-gatling_path =ASSETS/"characters"/"luffy"/"Left (Normal - Playable)"/"Assembled Sprites"/"motion_0002_attack"
+gatling_path = "assets\\characters\\luffy\\Left (Normal - Playable)\\Assembled Sprites\\motion_0002_attack"
 
 for i in range(1, 46):
-    full_path=gatling_path/f"{i}.png"
+    full_path = f"{gatling_path}\\{i}.png"
     frame_img =pygame.image.load(str(full_path)).convert_alpha()
     frame_img=pygame.transform.scale(frame_img, (400, 130))
     luffy_attack2_frames.append(frame_img)
@@ -123,7 +120,7 @@ for i in range(1, 46):
 # Alvida defeat
 alvida_fall_frames = []
 for i in range(1, 12):
-    full_path2=ASSETS/"characters"/"alvida"/"fall"/f"alvida-fall-{i}.png"
+    full_path2 = f"assets\\characters\\alvida\\fall\\alvida-fall-{i}.png"
     frame_img2= pygame.image.load(str(full_path2)).convert_alpha()
     frame_img2=pygame.transform.scale(frame_img2, (200, 100))
     alvida_fall_frames.append(frame_img2)
@@ -131,7 +128,7 @@ for i in range(1, 12):
 # Alvida attack
 alvida_attack_frames = []
 for i in range(1, 16):
-    full_path3=ASSETS/"characters"/"alvida"/"attack"/f"alvida-attack-{i}.png"
+    full_path3 = f"assets\\characters\\alvida\\attack\\alvida-attack-{i}.png"
     frame_img3 = pygame.image.load(str(full_path3)).convert_alpha()
     frame_img3 = pygame.transform.scale(frame_img3, (145, 150))
     alvida_attack_frames.append(frame_img3)
